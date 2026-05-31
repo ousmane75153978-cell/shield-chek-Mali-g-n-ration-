@@ -7,8 +7,8 @@ final storage = FlutterSecureStorage();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: ''https://frsvuwpidxsxuczgwmfh.supabase.co,
-    anonKey: 'TA_CLE_ANON_ICI',
+    url: 'https://frsvuwpidxsxuczgwmfh.supabase.co,
+    anonKey:',
   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZyc3Z1d3BpZHhzeHVjemd3bWZoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzI4MzQzMCwiZXhwIjoyMDg4ODU5NDMwfQ.YAx5DQFBRVQhe5MvbELzLx6RRnAtiu-gr1MRwJP1Ras..frsvuwpidxsxuczgwmfh;
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: SplashCheck()));
 }

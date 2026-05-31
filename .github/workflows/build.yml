@@ -7,6 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      # Cette étape va afficher tous les dossiers et fichiers trouvés
+      - name: Diagnostic - Lister les fichiers
+        run: ls -R
+          
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.19.0'
@@ -14,9 +18,8 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
         
-      # C'est ici l'étape cruciale : on force le build sur lib/main.dart
       - name: Build APK
-        run: flutter build apk --release --target lib/main.dart
+        run: flutter build apk --release
         
       - uses: actions/upload-artifact@v4
         with:

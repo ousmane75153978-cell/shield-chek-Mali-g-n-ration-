@@ -12,5 +12,5 @@ dependencies:
   flutter_secure_storage: ^9.0.0
 
 flutter:
-  uses-material-design: tr
-  ue
+  uses-material-design: t
+  rue
